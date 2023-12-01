@@ -39,7 +39,7 @@ In the editor, you can define scripts for the following actions:
 * **Create** script is executed before a content item is created.
 * **Change** script is executed before the status of a content item is changed. When you use scheduling to change the status of a content item in the future, the script is called just before the status is changed and not when you schedule it. This can also stop your scheduling, when the script fails or it rejects the change.
 * **Delete** script is executed before a content item is deleted.
-* **Update** script is executed before a content item is updated.
+* **Update** script is executed before a content item is updated. Does not execute if nothing has been changed.
 
 Content creation and updates happen in the following order:
 
